@@ -1,5 +1,7 @@
 # Access to Rollins HPC R environment, using Conda an Jupyter Server 
 
+> Original version developed by Dr. Pengfei Liu | Georgia Inistitute of Technology, Dr. Liuhua Shi | Emory University.
+
 ## Why Conda?
 
 I. Installation of Anaconda on a remote server does not require root permission. Other solutions, such as Rstudio server will need root, and only cluster manager can install.
