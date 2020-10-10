@@ -1,7 +1,7 @@
 # Access to Rollins HPC R environment with GUI, using Conda and Jupyter Server 
 
 > By Dr. Pengfei Liu | Georgia Tech, Dr. Liuhua Shi and Wenhao Wang | Emory University
-
+> Contact: wenhao.wang@emory.edu
 
 ## Why Conda?
 
@@ -13,8 +13,8 @@ III. Graphic interface with Jupyter notebook.
 
 ## Install Conda and configure environment 
 # you only need to install Conda and environment once. you'll need to activate the environment every time before starting Jupyter
-### 1. Before Process
-Before your login to the Rollins HPC. Make sure you can login to the Emory VPN. You may also need to change your default login shell for your Emory ID to 'bash'. Please see links below for details:
+### 1. Connect Emory VPN
+Before your login to the Rollins HPC, please make sure you have connected Emory VPN. You can download the "BIG-IP Edge Client" app for VPN. You may also need to change your default login shell for your Emory ID to 'bash'. Please see links below for details:
 
 https://vpn.emory.edu
 
