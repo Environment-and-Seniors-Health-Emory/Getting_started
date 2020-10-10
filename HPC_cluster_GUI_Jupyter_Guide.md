@@ -1,8 +1,7 @@
 # Access to Rollins HPC R environment with GUI, using Conda and Jupyter Server 
 
-> Original version developed by Dr. Pengfei Liu | Georgia Inistitute of Technology, Dr. Liuhua Shi | Emory University
+> By Dr. Pengfei Liu | Georgia Tech, Dr. Liuhua Shi and Wenhao Wang | Emory University
 
-> Modified by Wenhao Wang | Emory University (wenhao.wang@emory.edu)
 
 ## Why Conda?
 
@@ -12,7 +11,8 @@ II. Anaconda is completely free
 
 III. Graphic interface with Jupyter notebook.
 
-## Instruction
+## Install Conda and configure environment 
+# you only need to install Conda and environment once. you'll need to activate the environment every time before starting Jupyter
 ### 1. Before Process
 Before your login to the Rollins HPC. Make sure you can login to the Emory VPN. You may also need to change your default login shell for your Emory ID to 'bash'. Please see links below for details:
 
@@ -25,7 +25,8 @@ https://mynetid.emory.edu/IDMProv/portal/cn/DefaultContainerPage/WelcometoMyNetI
 
 In putty, click ssh -> tunnel, add tunnel 8999:localhost:8999
 
->Windows Users are highly recommended to install PowerShell from Microsoft Software Store, so that you can have terminal like mac users.
+>Windows Users can alternatively install PowerShell from Microsoft Software Store, so that you can have terminal like mac users.
+
 #### Mac/Linux/Window Powershell Users
 In terminal, type:
 
@@ -61,33 +62,41 @@ Creat an environment, named 'r-env', install r-base and r-essentials packages
 
 `conda install jupyter`
 
+You have finished conda installation and configuration of an environment for R!
+
+## You will need to follow below steps every time you use Anaconda on the cluster 
+
+If you have not login the cluster, please do so. Make sure you are in your home directory
+
 ### 5. Allocate Computation Resources on the HPC
 
-> Attention: Do not run computation intensive jobs on the login node. We need to run R on the interactive-cpu partition.
+### Attention: Do not run computation intensive jobs on the login node. We need to run R on the interactive-cpu partition.
 
-For example, the following command apply 4 CPU cores, 32GB memory on the interactive-cpu partition.
+For example, the following command will apply for 1 CPU core, 16GB memory, 8 hours on the interactive-cpu partition. You may change these parameters according to your jobs. 
 
-`salloc -p interactive-cpu -n 4 -t 1-00:00 --mem=32000`
+`salloc -p interactive-cpu -n 1 -t 0-8:00 --mem=16000`
+
+Once you get the message "Granted job allocation XXXXXX"
 
 `ssh -L 8999:localhost:8999 $SLURM_JOB_NODELIST`
 
-> You may fail to applicate 4 cores, you may need to change the CPU number to 1 for a authorization from the HPC.
+Now you are on a computation node.
 
-### 6. Start Jupiter Server Under Home Directory:
-> You may need to re-login to the HPC and activate the r-env to make the jupyter command accessible.
+Activate your R environment:
+`conda activate r-env`
 
-` jupyter notebook --NotebookApp.toke=‘PASSWORD’ --no-browser --port=8999`
-
->Please set adequate password to maintain secure link to jupyter server.
+Start Jupyter server:
+Never run the following command before you have successfuly allocate resources on computation nodes. You'll get a warning email if you run Jupyter on log-in nodes. 
+`jupyter notebook --NotebookApp.toke='' --no-browser --port=8999`
 
 You may save this line of command into a file under ~/bin/myjupyter, then add execute, chmod 755 myjupyter, next time you may just type myjupyter to start jupyter notebook.
 
 ### 7. Open Jupyter Notebook at Local Machine.
-On you own PC (Mac, Linux, Windows), open your browser, type at the address bar and visit:
+On you own PC (Mac, Linux, Windows, IPad, phone), open your browser, type at the address bar and visit:
 
 [http://localhost:8999](http://localhost:8999/)
 
-> You may need to enter the password you set at Step 6.
+> You may need to enter the password if you set password at Step 6 (i.e., --NotebookApp.toke='PASSWORD').
 
 Jupyter Notebook should start in your browser.
 
