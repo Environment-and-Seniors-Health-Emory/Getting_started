@@ -67,7 +67,7 @@ Creat an environment, named 'r-env', install r-base and r-essentials packages
 
 For example, the following command apply 4 CPU cores, 32GB memory on the interactive-cpu partition.
 
-`sallow -p interactive-cpu -n 4 -6 1-00:00 --mem=32000`
+`salloc -p interactive-cpu -n 4 -t 1-00:00 --mem=32000`
 
 `ssh -L 8999:localhost:8999 $SLURM_JOB_NODELIST`
 
