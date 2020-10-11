@@ -1,6 +1,6 @@
 # Access to Rollins HPC R environment with GUI, using Conda and Jupyter Server 
 
-> By Dr. Pengfei Liu | Georgia Tech, Dr. Liuhua Shi and Wenhao Wang | Emory University
+> By Dr. Liuhua Shi | Emory University, Dr. Pengfei Liu | Georgia Tech, and Wenhao Wang | Emory University
 > Contact: wenhao.wang@emory.edu
 
 ## Why Conda?
