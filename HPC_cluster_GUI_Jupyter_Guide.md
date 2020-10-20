@@ -89,6 +89,7 @@ Start Jupyter server:
 Never run the following command before you have successfuly allocate resources on computation nodes. You'll get a warning email if you run Jupyter on log-in nodes. 
 `jupyter notebook --NotebookApp.toke='' --no-browser --port=8999`
 
+Please double check all symbols in this line is in English (rather than in other languages), otherwise you may get some weird page asking for token/password.
 You may save this line of command into a file under ~/bin/myjupyter, then add execute, chmod 755 myjupyter, next time you may just type myjupyter to start jupyter notebook.
 
 ### 7. Open Jupyter Notebook at Local Machine.
