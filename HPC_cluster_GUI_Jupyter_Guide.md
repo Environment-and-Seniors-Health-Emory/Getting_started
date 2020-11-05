@@ -64,7 +64,7 @@ Creat an environment, named 'r-env', install r-base and r-essentials packages
 
 You have finished conda installation and configuration of an environment for R!
 
-## You will need to follow below steps every time you use Anaconda on the cluster 
+## You will need to follow the steps below every time you use Anaconda on the cluster 
 
 If you have not login the cluster, please do so. Make sure you are in your home directory
 
