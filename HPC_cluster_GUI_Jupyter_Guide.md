@@ -92,7 +92,7 @@ Never run the following command before you have successfuly allocate resources o
 Please double check all symbols in this line is in English (rather than in other languages), otherwise you may get some weird page asking for token/password.
 You may save this line of command into a file under ~/bin/myjupyter, then add execute, chmod 755 myjupyter, next time you may just type myjupyter to start jupyter notebook.
 
-### 7. Open Jupyter Notebook at Local Machine.
+### 6. Open Jupyter Notebook at Local Machine.
 On you own PC (Mac, Linux, Windows, IPad, phone), open your browser, type at the address bar and visit:
 
 [http://localhost:8999](http://localhost:8999/)
@@ -101,7 +101,7 @@ On you own PC (Mac, Linux, Windows, IPad, phone), open your browser, type at the
 
 Jupyter Notebook should start in your browser.
 
-### 8. Open R script to link the session
+### 7. Open R script to link the session
 Click 'New --> R' at upper-right corner to srart an R notebook.
 
 After R session, use Crtl-C to end the Jupyter server.
