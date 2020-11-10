@@ -87,7 +87,7 @@ Activate your R environment:
 
 Start Jupyter server:
 Never run the following command before you have successfuly allocate resources on computation nodes. You'll get a warning email if you run Jupyter on log-in nodes. 
-`jupyter notebook --NotebookApp.toke='' --no-browser --port=8999`
+`jupyter notebook --NotebookApp.token='' --no-browser --port=8999`
 
 Please double check all symbols in this line is in English (rather than in other languages), otherwise you may get some weird page asking for token/password.
 You may save this line of command into a file under ~/bin/myjupyter, then add execute, chmod 755 myjupyter, next time you may just type myjupyter to start jupyter notebook.
@@ -97,7 +97,7 @@ On you own PC (Mac, Linux, Windows, IPad, phone), open your browser, type at the
 
 [http://localhost:8999](http://localhost:8999/)
 
-> You may need to enter the password if you set password at Step 6 (i.e., --NotebookApp.toke='PASSWORD').
+> You may need to enter the password if you set password at Step 6 (i.e., --NotebookApp.token='PASSWORD').
 
 Jupyter Notebook should start in your browser.
 
