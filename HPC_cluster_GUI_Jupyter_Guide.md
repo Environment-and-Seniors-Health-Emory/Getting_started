@@ -109,7 +109,7 @@ After R session, use Crtl-C to end the Jupyter server.
 
 Manually kill a job according to its PID number, so that the resources will be properly released: 
 
-`top -o %MEM`
+`top -o %MEM` or `top`
 
 `kill -9 PID` 
 
