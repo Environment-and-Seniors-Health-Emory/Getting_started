@@ -32,6 +32,8 @@ In terminal, type:
 
 `ssh -L 8999:localhost:8999 username@clogin01.sph.emory.edu`
 
+It could be other 4-digit numbers too, eg 8111,8222,8333, 6820 (except 8888). Just make sure that you are using the same 4-digit numbers througout.
+
 >Note: You should have already finished the onboard process of the HPC by resetting passowrd.
 
 ### 3. Download Miniconda
