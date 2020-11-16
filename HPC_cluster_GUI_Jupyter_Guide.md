@@ -113,8 +113,6 @@ Manually kill a job according to its PID number, so that the resources will be p
 
 `kill -9 PID` 
 
-Type 'top -o %MEM' again to make sure the memory is released.
-
 Type 'exit' to end the interactive-cpu node.
 
 Type 'exit' again to end HPC connection.
