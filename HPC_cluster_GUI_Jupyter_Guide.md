@@ -108,13 +108,15 @@ Click 'New --> R' at upper-right corner to srart an R notebook.
 After R session, use Crtl-C to end the Jupyter server.
 
 Manually kill a job according to its PID number, so that the resources will be properly released: 
+
 `top -o %MEM`
+
 `kill -9 PID` 
+
+Type 'top -o %MEM' again to make sure the memory is released.
 
 Type 'exit' to end the interactive-cpu node.
 
-Type 'qstat' to make sure the session is not running.
-
-Then, you can use 'exit' again to end HPC connection.
+Type 'exit' again to end HPC connection.
 
 
