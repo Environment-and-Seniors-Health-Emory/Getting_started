@@ -78,7 +78,7 @@ For example, the following command will apply for 1 CPU core, 16GB memory, 8 hou
 
 Once you get the message "Granted job allocation XXXXXX"
 
-`ssh -L 8999:localhost:8999 $SLURM_JOB_NODELIST`
+`ssh -L XXXX:localhost:XXXX $SLURM_JOB_NODELIST`
 
 Now you are on a computation node.
 
@@ -104,7 +104,12 @@ Jupyter Notebook should start in your browser.
 ### 7. Open R script to link the session
 Click 'New --> R' at upper-right corner to srart an R notebook.
 
+### 8. Manually kill the job to release the memory/CPU resources
 After R session, use Crtl-C to end the Jupyter server.
+
+Manually kill a job according to its PID number, so that the resources will be properly released: 
+`top -o %MEM`
+`kill -9 PID` 
 
 Type 'exit' to end the interactive-cpu node.
 
