@@ -84,8 +84,8 @@ Once you get the message "Granted job allocation XXXXXX"
 
 Now you are on a computation node.
 
-First, I would recommend check the memory size that is available using 'top -o %MEM'. It can also tell you that whether your previous finished/killed jobs are still occupying the memory size. If yes, please use 'kill -9 PID' to manually kill the jobs so that the memory size can be released.
-
+First, I would recommend check the memory size that is available using `top -o %MEM`. It can also tell you that whether your previous finished/killed jobs are still occupying the memory size or not. If yes, please use `kill -9 PID` to manually kill the jobs so that the memory size can be released.
+ 
 Activate your R environment:
 `conda activate r-env`
 
