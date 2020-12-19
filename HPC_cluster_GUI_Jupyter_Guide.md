@@ -84,7 +84,7 @@ Once you get the message "Granted job allocation XXXXXX"
 
 Now you are on a computation node.
 
-First, I would recommend check the memory size that is available using `top -o %MEM`. It can also tell you that whether your previous finished/killed jobs are still occupying the memory size or not. If yes, please use `kill -9 PID` to manually kill the jobs so that the memory size can be released.
+First, I would recommend check the memory size that is available using `top -o %MEM`. It can also tell you that whether your previous finished/killed jobs are still occupying the memory size or not. If yes, please "Ctrl-C" and then use `kill -9 PID` to manually kill the jobs so that the memory size can be released.
  
 Activate your R environment:
 `conda activate r-env`
@@ -114,6 +114,8 @@ After R session, use Crtl-C to end the Jupyter server.
 Manually kill a job according to its PID number, so that the resources will be properly released: 
 
 `top -o %MEM` or `top`
+
+Click "Ctrl-C"
 
 `kill -9 PID` 
 
