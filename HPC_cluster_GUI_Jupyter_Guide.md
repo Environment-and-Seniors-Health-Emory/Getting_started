@@ -108,14 +108,15 @@ Jupyter Notebook should start in your browser.
 ### 7. Open R script to link the session
 Click 'New --> R' at upper-right corner to srart an R notebook.
 
-### 8. Manually kill the job to release the memory/CPU resources
-After R session, use Crtl-C to end the Jupyter server.
-
-Manually kill a job according to its PID number, so that the resources will be properly released: 
+### 8. Open Terminal within Jupyter 
+Click 'New --> Terminal' at upper-right corner to srart a terminal, so one can monitor the memory/CPU resources:
 
 `top -o %MEM` or `top`
 
-Click "Ctrl-C"
+Click "Ctrl-C".
+
+### 9. Manually kill the job in Terminal to release the memory/CPU resources
+Manually kill a job according to its PID number, so that the resources will be properly released. In the terminal (step 8): 
 
 `kill -9 PID` 
 
