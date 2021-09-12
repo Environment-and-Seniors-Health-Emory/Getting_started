@@ -74,9 +74,9 @@ If you have not login the cluster, please do so. Make sure you are in your home 
 
 ### Attention: Do not run computation intensive jobs on the login node. We need to run R on the interactive-cpu partition.
 
-For example, the following command will apply for 1 CPU core, 16GB memory, 8 hours on the interactive-cpu partition. You may change these parameters according to your jobs. 
+You can type "sinfo" in the terminal to check which nodes are idle (i.e. available), and then log into that node. For example, the following command will apply for 1 CPU core, 1GB memory, 8 hours on the interactive-cpu partition. You may change these parameters according to your jobs. 
 
-`salloc -p interactive-cpu -n 1 -t 0-8:00 --mem=16000`
+`salloc -p interactive-cpu -n 1 -t 0-8:00 --mem=1000`
 
 Once you get the message "Granted job allocation XXXXXX"
 
