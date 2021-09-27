@@ -9,8 +9,8 @@
 #####  ·  Data will never be stored locally on a laptop nor on removable media devices. All output containing individual identifiable information will never be transferred electronically via email or other protocols.  
 #####  ·  Individuals not physically located in the US cannot access the data.
 #####  ·  HIPAA violations can be felonies, resulting in jail time and a maximum penalty of $1.5 million per year for violations of an identical provision. 
-#####  ·  Due to the large size of the dataset, limited storage, and computational capacity/resources at this time, I would suggest starting from a small region (e.g., California). The results can be considered as preliminary results in future proposals, where we can scale up the analysis to a larger region (e.g., the nationwide analysis).
-#####  ·  Please fill out the data request form (link provided below) for every new project you start with the Medicare data, and an approval from Dr. Shi is needed. The dataset(s) shall be used for the proposed project only.
+#####  ·  Due to the large size of the dataset, limited storage, and computational capacity/resources at this time, I would suggest starting from a small region (e.g., California). 
+#####  ·  Please fill out the data request form (link provided below) for every new project you start with the CMS data, and an approval from Dr. Shi is needed. The dataset(s) shall be used for the proposed project only.
           
           https://docs.google.com/forms/d/1F-ZL-IOToB_cyP8qjti6sGXsU1JCarPA9eGTyBF9sWM/edit?ts=5f7a0668
          
