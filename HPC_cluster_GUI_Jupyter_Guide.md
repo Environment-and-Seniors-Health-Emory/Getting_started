@@ -115,18 +115,6 @@ Click 'New --> Terminal' at upper-right corner to srart a terminal, so one can m
 
 Click "Ctrl-C".
 
-Add an extension for Jupyter notebook to inspect variables:
-
-1. (bash) pip install jupyter_contrib_nbextensions
-
-2. (bash) jupyter contrib nbextension install --user
-
-3. (R) install.packages("repr")
-
-4. (bash) jupyter nbextension enable varInspector/main
-
-This creates a little icon that we can click to open the variable explorer window beneath the menu bar (the 1st icon from the right).
-
 ### 9. Manually kill the job in Terminal to release the memory/CPU resources
 Manually kill a job according to its PID number, so that the resources will be properly released. In the terminal (step 8): 
 
